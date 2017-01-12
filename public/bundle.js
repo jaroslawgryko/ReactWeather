@@ -26622,19 +26622,20 @@
 
 	var React = __webpack_require__(1);
 
-	//var About = React.createClass({
-	//    render: function(){
-	//        return (
-	//            <h3>About component.</h3>
-	//        );
-	//    }
-	//});
-
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'About Component'
+	    React.createElement(
+	      'h3',
+	      null,
+	      'About'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to About page.'
+	    )
 	  );
 	};
 
